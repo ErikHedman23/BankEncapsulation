@@ -23,11 +23,13 @@ namespace BankEncapsulation
         }
         public double GetBalance() 
         {
+            Console.ForegroundColor = ConsoleColor.Red;
             return _balance;
         }
         
         public double Withdrawal(double withdrawal)
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             return _balance -= withdrawal;
         }
 

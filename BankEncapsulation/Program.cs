@@ -33,8 +33,8 @@
                             Console.WriteLine("Invalid entry.");
                             continue;
                         }
-
                         newUser.Deposit(deposit);
+                        myAccountBalance = newUser.GetBalance();
                         Console.WriteLine($"Your current account balance is sitting at: {myAccountBalance}");
                         break;
                     case 3:
